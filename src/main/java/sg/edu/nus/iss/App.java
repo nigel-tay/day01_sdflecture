@@ -19,8 +19,16 @@ public class App {
         if (name.length() > 0) {
             System.out.printf("Nice to meet you, %s, your mother's name is %s and your age is %d years old", name,
                     mother_name, age);
-        } else {
+        }
+        else {
             System.err.println("You have not told me your name lol.");
+        }
+
+        String input = con.readLine("What is your hobby?");
+        input = input.trim();
+
+        if (input.equals("swim")) {
+            System.out.println("Splash");
         }
     }
 }
