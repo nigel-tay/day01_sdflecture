@@ -53,5 +53,37 @@ public class App {
         else {
             System.out.println("You are not bb");
         }
+
+        // While loops
+        Integer i = 0;
+        input = con.readLine("Type a phrase: ");
+
+        while (i < input.length()) {
+            System.out.println(input.substring(0, i));
+            i++;
+        }
+
+        for (int k = 0; k <= input.length(); k++) {
+            System.out.println(input.substring(0, k));
+        }
+
+        // Arrays. Always remember to instantiate the array after you declared the array variable
+        String[] todo = new String[5];
+
+        for (int j = 0; j < todo.length; j++) {
+            input = con.readLine("Enter todo task  " + (j + 1) + ": ");
+            todo[j] = input;
+        }
+
+        for (int h = 0; h < todo.length; h++) {
+            System.out.println("Task " + (h + 1) + "--> " + todo[h]);
+        }
+
+        // Slide 24
+        String streetName = "NUS";
+        if (args.length > 0) {
+            streetName = args[0];
+        }
+        System.out.println(streetName);
     }
 }
