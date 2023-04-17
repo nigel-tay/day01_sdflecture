@@ -40,5 +40,18 @@ public class App {
                 System.out.println("You are health");
                 break;
         }
+
+        // Slide 19
+        Integer myAge = 0;
+        String inputAge = con.readLine("What is your age? :> ");
+
+        myAge = Integer.parseInt(inputAge);
+
+        if (myAge >= 0 && myAge <= 3) {
+            System.out.println("You are bb");
+        }
+        else {
+            System.out.println("You are not bb");
+        }
     }
 }
