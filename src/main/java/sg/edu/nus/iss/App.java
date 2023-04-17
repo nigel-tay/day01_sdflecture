@@ -24,11 +24,21 @@ public class App {
             System.err.println("You have not told me your name lol.");
         }
 
-        String input = con.readLine("What is your hobby?");
+        String input = con.readLine("\nWhat is your hobby?");
         input = input.trim();
 
-        if (input.equals("swim")) {
-            System.out.println("Splash");
+        // if (input.equals("swim")) {
+        //     System.out.println("Splash");
+        // }
+
+        // Switch statements are better for statis inputs like a short string
+        switch(input) {
+            case "swim":
+                System.out.println("You love swim?");
+                break;
+            case "jog":
+                System.out.println("You are health");
+                break;
         }
     }
 }
